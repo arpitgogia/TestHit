@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 app.get('/', function(req, res) {
-    console.log('API Invoked#');
+    console.log(req.query.message);
     res.send('API Invoked');
 });
 var port = process.env.PORT || 8080;
